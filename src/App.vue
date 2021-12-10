@@ -4,13 +4,23 @@
 </script>
 
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <router-link v-bind:to="{ name: 'HomePage' }">HomePage</router-link>
-  <router-link v-bind:to="{ name: 'QuizDev' }">QuizDev</router-link>
-  <router-link v-bind:to="{ name: 'QuizUser' }">QuizUser</router-link>
-
+  <header-app />
   <router-view :key="$route.fullPath"></router-view>
+  <footer-app />
 </template>
+
+<script>
+  import Header from './components/statics/HeaderApp.vue'
+  import Footer from './components/statics/FooterApp.vue'
+
+  export default {
+    name: 'App',
+    components: {
+      'header-app': Header,
+      'footer-app': Footer,
+    }
+  }
+</script>
 
 <style>
 #app {
