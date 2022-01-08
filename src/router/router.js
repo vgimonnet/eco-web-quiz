@@ -7,9 +7,24 @@ const routeInfos = [
     component: () => import('../components/HomePage.vue')
   },
   {
-    path: '/quiz/dev',
-    name: 'QuizDev',
-    component: () => import('../components/QuizDevPage.vue')
+    path: '/quiz/back',
+    name: 'QuizBack',
+    component: () => import('../components/QuizBackPage.vue')
+  },
+  {
+    path: '/quiz/design',
+    name: 'QuizDesign',
+    component: () => import('../components/QuizDesignPage.vue')
+  },
+  {
+    path: '/quiz/front',
+    name: 'QuizFront',
+    component: () => import('../components/QuizFrontPage.vue')
+  },
+  {
+    path: '/quiz/infra',
+    name: 'QuizInfra',
+    component: () => import('../components/QuizInfraPage.vue')
   },
   {
     path: '/quiz/user',
