@@ -1,41 +1,41 @@
 [
   {
     "id": 1,
-    "text": "In the life cycle of a device, which phase polluting the most according to you ?",
+    "text": "In the life cycle of a device, which phase polluting the most according to you?",
     "proposals": ["Manufacture", "Use", "End of life"],
-    "answer": "Manufacture",
+    "answer": 0,
     "explanation": "Manufacture is the most polluting phase of a device life cycle. It use a lot of raw materials, human resources, energies, ... <br/> A TV needs 2,5 tons of raw materials, generates 350kg of CO2, uses more than a hundred liters of water. In 2019 in the World, there was 34 billions of devices, 8 per person on average (without taking account the geographical disparities).",
     "tips": "Keep devices longer. They doesn't needs to be changer every year or two year if we take a look to actual duration keeping of a smartphone."
   },
   {
     "id": 2,
-    "text": "If the Internet was a country. What would be its ranks in the world ranking of electricity consumption ?",
+    "text": "If the Internet was a country. What would be its ranks in the world ranking of electricity consumption?",
     "proposals": ["1st", "3rd", "10th", "15th"],
-    "answer": "3rd",
+    "answer": 1,
     "explanation": "If the Internet was a country it would be third in this ranking. Just behing China and the USA. It is responsible for about 10% of the world's electricity consumption and also about 4% of the GHG (Greenhouse gases) emission.",
     "tips": "Stop using internet obviously ! More seriously, stop using internet when it's not necessary, as for a word definition for example, take a dictionnary !"
   },
   {
     "id": 3,
-    "text": "What percentage of recycled electronic devices is the right one ?",
+    "text": "What percentage of recycled electronic devices is the right one?",
     "proposals": ["25%", "40%", "55%", "70%"],
-    "answer": "25%",
+    "answer": 0,
     "explanation": "Only 25% of devices are recycled when at the end of their life or use. It's principaly because of the difficulty of separating WEEE (Waste Electrical and Electronic Equipment) chemicals. The other one, if they are not at the bottom of a drawer, are sent to India, China or Africa where they are put in a giant open-air garbage dump.",
     "tips": "Stop keeping unused devices. You can donate or sell them to a specialist for recycling or reconditioning."
   },
   {
     "id": 4,
-    "text": "On average, an employee sends 2500 emails per year. If we compare the pollution of these emails to traveling by car, how many kilometers does the car have to travel ?",
+    "text": "On average, an employee sends 2500 emails per year. If we compare the pollution of these emails to traveling by car, how many kilometers does the car have to travel?",
     "proposals": ["10km", "100km", "1 000km", "10 000km"],
-    "answer": "1 000km",
+    "answer": 2,
     "explanation": "An email emits 5g of CO2. If you add a 1MB attachment, it emits 20g of CO2. Each day more than 300 billions emails are sending around the world, 60% will never be opened, 75% are spams. Each one is stored in a datacenter.",
     "tips": "Send email only if it is necessary don't forget about cell texting."
   },
   {
     "id": 5,
-    "text": "Streaming is developing rapidly and taking an important place in data flow. What is the proportion of this flow ?",
+    "text": "Streaming is developing rapidly and taking an important place in data flow. What is the proportion of this flow?",
     "proposals": ["20%", "40%", "60%", "80%"],
-    "answer": 3,
+    "answer": 2,
     "explanation": "With the mass arrival of streaming platforms, it reaches 60% of the total flow. According to estimates, we will very quickly reach 80%. It alone accounts for 1% of global greenhouse gas emissions. It is estimated that watching one hour of high quality video on your smartphone has the same impact as the consumption of a refrigerator over a year.",
     "tips": "Lower video quality, 480p is enough. Disable autoplay on social networks. Do not put your webcam if not necessary."
   }

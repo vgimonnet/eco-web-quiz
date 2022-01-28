@@ -7,9 +7,9 @@
     </div>
     <div v-else>
       <button 
-        v-for="proposal in question.proposals" 
-        :key="proposal" 
-        @click="answerQuestion(proposal)" 
+        v-for="(proposal, index) in question.proposals" 
+        :key="index" 
+        @click="answerQuestion(index)" 
       >
         {{ proposal }}
       </button>
