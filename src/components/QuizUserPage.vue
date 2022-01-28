@@ -32,7 +32,7 @@
     },
     methods: {
       changeQuestion() {
-        if (this.activeQuestion == 2) {
+        if (this.activeQuestion == 5) {
           this.isEnded = true;
         }
         this.activeQuestion++;        

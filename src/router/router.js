@@ -12,19 +12,14 @@ const routeInfos = [
     component: () => import('../components/QuizBackPage.vue')
   },
   {
-    path: '/quiz/design',
-    name: 'QuizDesign',
-    component: () => import('../components/QuizDesignPage.vue')
+    path: '/quiz/conception',
+    name: 'QuizConception',
+    component: () => import('../components/QuizConceptionPage.vue')
   },
   {
     path: '/quiz/front',
     name: 'QuizFront',
     component: () => import('../components/QuizFrontPage.vue')
-  },
-  {
-    path: '/quiz/infra',
-    name: 'QuizInfra',
-    component: () => import('../components/QuizInfraPage.vue')
   },
   {
     path: '/quiz/user',

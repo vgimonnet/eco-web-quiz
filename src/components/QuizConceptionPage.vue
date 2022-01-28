@@ -15,11 +15,11 @@
 </template>
 
 <script>
-  import questions from '../datas/quiz-design.json'
+  import questions from '../datas/quiz-conception.json'
   import QuestionCard from './quiz/QuestionCard.vue'
 
   export default {
-    name: "QuizDesignPage",
+    name: "QuizConceptionPage",
     components: {
       'question-card': QuestionCard
     },
