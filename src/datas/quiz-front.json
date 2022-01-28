@@ -1,72 +1,42 @@
 [
   {
     "id": 1,
-    "text": "How much is 1+1 ?",
-    "proposals": [1, 2, 3, 4],
-    "answer": 2,
-    "explanation": "explanation first question"
+    "text": "The use of images/illustrations in a site may be necessary. If its size is to be adapted how best to do it?",
+    "proposals": ["With CSS", "With height and with html tag attributes", "Upstream manually"],
+    "answer": "Upstream manually",
+    "explanation": "It is preferable to modify the size of an image beforehand if necessary. Resizing from CSS or attributes will download the image in its entirety or in its maximum weight and therefore use more bandwidth.",
+    "tips": "Resize the image using software to the desired size. If possible, use CSS instead of an image."
   },
   {
     "id": 2,
-    "text": "How much is 1+2 ?",
-    "proposals": [1, 2, 3, 4],
-    "answer": 3,
-    "explanation": "explanation second question"
+    "text": "Which use of CSS is the most eco-conceptual",
+    "proposals": ["Style tags", "Style attributes", "CSS style sheet"],
+    "answer": "CSS style sheet",
+    "explanation": "It is preferable to externalize its style sheets and separate the content if necessary to load only what is necessary.",
+    "tips": "Outsource and separate its CSS, do the same for JS."
   },
   {
     "id": 3,
-    "text": "How much is 1+2 ?",
-    "proposals": [1, 2, 3, 4],
-    "answer": 3,
-    "explanation": "explanation second question"
+    "text": "You can customize the printing of a web page.",
+    "proposals": ["true", "false"],
+    "answer": "true",
+    "explanation": "You can (must) create a specific style sheet for page printing. Add the attribute <span class=\"code\"><span class=\"property\">media</span><span class=\"equal\">=</span><span class=\"value\">\"print\"</span> in the call to your stylesheet.",
+    "tips": "Hide the header, footer, nav, ... everything that is useless for printing."
   },
   {
     "id": 4,
-    "text": "How much is 1+2 ?",
-    "proposals": [1, 2, 3, 4],
-    "answer": 3,
-    "explanation": "explanation second question"
+    "text": "If I use the same DOM element twice, I have to cache it.",
+    "proposals": ["true", "false"],
+    "answer": "true",
+    "explanation": "DOM manipulation is RAM and CPU intensive. We must try to reduce the calls as much as possible and therefore cache the DOM elements that we use several times.",
+    "tips": "Store DOM elements in a const or let variable."
   },
   {
     "id": 5,
-    "text": "How much is 1+2 ?",
-    "proposals": [1, 2, 3, 4],
-    "answer": 3,
-    "explanation": "explanation second question"
-  },
-  {
-    "id": 6,
-    "text": "How much is 1+2 ?",
-    "proposals": [1, 2, 3, 4],
-    "answer": 3,
-    "explanation": "explanation second question"
-  },
-  {
-    "id": 7,
-    "text": "How much is 1+2 ?",
-    "proposals": [1, 2, 3, 4],
-    "answer": 3,
-    "explanation": "explanation second question"
-  },
-  {
-    "id": 8,
-    "text": "How much is 1+2 ?",
-    "proposals": [1, 2, 3, 4],
-    "answer": 3,
-    "explanation": "explanation second question"
-  },
-  {
-    "id": 9,
-    "text": "How much is 1+2 ?",
-    "proposals": [1, 2, 3, 4],
-    "answer": 3,
-    "explanation": "explanation second question"
-  },
-  {
-    "id": 10,
-    "text": "How much is 1+2 ?",
-    "proposals": [1, 2, 3, 4],
-    "answer": 3,
-    "explanation": "explanation second question"
+    "text": "What is the best practice to update a DOM element from javascript?",
+    "proposals": ["Directly update", "Hide / Update / Show", "Remove / Recreate"],
+    "answer": "Hide / Update / Show",
+    "explanation": "The element must be masked before modification to reduce the number of repaints / reflows in the DOM which are costly in terms of CPU resources.",
+    "tips": "Put the element in display none before modification."
   }
 ]
