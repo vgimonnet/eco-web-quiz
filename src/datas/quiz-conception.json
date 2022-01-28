@@ -4,34 +4,39 @@
     "text": "In the life cycle of a digital service, which step is the most important to make a service \"green\" ?",
     "proposals": ["conception", "development", "deployment", "end of life"],
     "answer": "conception",
-    "explanation": "Even if all the steps are important in eco-conception, it is the design that has a major place. It is at this stage that we will think about all the rest of the life cycle, think about the functionalities, technologies, ... <br/> What can I do ? <strong>Take the time to design your project upstream.</strong>"
+    "explanation": "Even if all the steps are important in eco-conception, it is the design that has a major place. It is at this stage that we will think about all the rest of the life cycle, think about the functionalities, technologies, ...",
+    "tips": "Take the time to design your project upstream."
   },
   {
     "id": 2,
     "text": "To do web eco-conception, only developer skills are needed.",
     "proposals": ["true", "false"],
     "answer": "false",
-    "explanation": "It's wrong ! SEO, accessibility and UX design are necessary for optimal eco-design. <br/> What can I do ? <strong>Get training on these different skills or call on a specialist.</strong>"
+    "explanation": "It's wrong ! SEO, accessibility and UX design are necessary for optimal eco-design.",
+    "tips": "Get training on these different skills or call on a specialist."
   },
   {
     "id": 3,
     "text": "Eco-conception is not only an ecological approach.",
     "proposals": ["true", "false"],
     "answer": "true",
-    "explanation": "Beyond the ecological benefits, there are economic gains, time savings. We go to the essential with better performance, without superfluity, ..."
+    "explanation": "Beyond the ecological benefits, there are economic gains, time savings. We go to the essential with better performance, without superfluity, ...",
+    "tips": ""
   },
   {
     "id": 4,
     "text": "Which stack is best suited for a static showcase website?",
     "proposals": ["CMS", "Framework", "HTML/CSS/JS"],
     "answer": "HTML/CSS/JS",
-    "explanation": "For a static showcase site, web standards are more than enough. It is useless to use a framework or a CMS which will be gas factories, generate/use useless functionalities, ... <br/> What can I do ? <strong>Analyze which technology is most suitable.</strong>"
+    "explanation": "For a static showcase site, web standards are more than enough. It is useless to use a framework or a CMS which will be gas factories, generate/use useless functionalities, ...",
+    "tips": "Analyze which technology is most suitable."
   },
   {
     "id": 5,
     "text": "Web eco-design has no drawbacks.",
     "proposals": ["true", "false"],
     "answer": "false",
-    "explanation": "The main drawback is going to be the impact on the UI design. We will prefer a sober design rather than a design developed with animations or resource-intensive content. <br/> What can I do ? <strong>Use a sober design, without (too many) images, videos, 3D, ...</strong>"
+    "explanation": "The main drawback is going to be the impact on the UI design. We will prefer a sober design rather than a design developed with animations or resource-intensive content.",
+    "tips": "Use a sober design, without (too many) images, videos, 3D, ..."
   }
 ]
