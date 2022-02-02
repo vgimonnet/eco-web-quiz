@@ -1,6 +1,6 @@
 <template>
   <main>
-    <h1>Quiz - Environmental impact of digital technology</h1>
+    <h1>Quiz - The environmental impact of digital</h1>
     <question-card 
       v-for="question in questions"
       :key="question.id" 
@@ -8,26 +8,27 @@
       :activeQuestion="activeQuestion"
       @changeQuestion="changeQuestion()"
     />
-    <p v-if="isEnded">
-      Quiz is over ! Thanks for your participation !
-    </p>
+    <end-quiz :isEnded="isEnded" :activeQuiz="activeQuiz" />
   </main>  
 </template>
 
 <script>
-  import questions from '../datas/quiz-user.json'
-  import QuestionCard from './quiz/QuestionCard.vue'
+  import questions from '../datas/quiz-user.json';
+  import QuestionCard from './quiz/QuestionCard.vue';
+  import EndQuiz from './quiz/EndQuiz.vue';
 
   export default {
     name: "QuizUserPage",
     components: {
-      'question-card': QuestionCard
+      'question-card': QuestionCard,
+      'end-quiz': EndQuiz
     },
     data() {
       return {
         questions: questions,
         activeQuestion: 1,
-        isEnded: false
+        isEnded: false,
+        activeQuiz: 'QuizUser'
       }
     },
     methods: {

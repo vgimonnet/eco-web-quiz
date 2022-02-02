@@ -3,18 +3,19 @@
     "id": 1,
     "text": "In PHP what is the most eco-conceptual way to declare a string",
     "proposals": [
-      "<span class=\"code-php\"><span class=\"var\">$str</span><span class=\"equal\">=</span><span class=\"str\">\"string\"</span>;",
-      "<span class=\"code-php\"><span class=\"var\">$str</span><span class=\"equal\">=</span><span class=\"str\">'string'</span>;",
-      "<span class=\"code-php\"><span class=\"var\">$str</span><span class=\"equal\">=</span><span class=\"str\"><<<</span><span class=\"equal\">END</span><br/></span><span class=\"string tab\"string</span><span class=\"equal\">END</span>;"
+      "<span class=\"code-php\"><span class=\"var\">$str</span> = <span class=\"str\">\"string\"</span>;",
+      "<span class=\"code-php\"><span class=\"var\">$str</span> = <span class=\"str\">'string'</span>;",
+      "<span class=\"code-php\"><span class=\"var\">$str</span> = <span class=\"str\"><<<</span><span class=\"equal\">END</span><br/></span><span class=\"string tab\"string</span><span class=\"equal\">END</span>;"
     ],
     "answer": 1,
+    "customAnswer": "$str = 'string';",
     "explanation": "It is best to use single quotes '. The other two declarations will be analyzed by PHP to see if it finds any variables to interpret.",
     "tips": "Always use single quotes with a string. If you need to use variables inside, use concatenation."
   },
   {
     "id": 2,
     "text": "Is this for loop statement eco-conceptual?",
-    "proposals": ["true", "false"],
+    "proposals": ["True", "False"],
     "answer": 1,
     "explanation": "Avoid using functions in a loop declaration. They will be called at each iteration and consume more resources.",
     "tips": "Store the result in a variable before the loop declaration and use it inside."
@@ -22,7 +23,7 @@
   {
     "id": 3,
     "text": "Destroying variables is a good practice.",
-    "proposals": ["true", "false"],
+    "proposals": ["True", "False"],
     "answer": 0,
     "explanation": "Remember to remove variables that are no longer used to save RAM resources. In particular tables and collections which can take up a lot of space.",
     "tips": "Use the PHP function <span class=\"code-php\"><span class=\"function\">unset</span>(<span class=\"var\">$var</span>);</span> to remove the variable and free up memory space."
@@ -43,7 +44,7 @@
   {
     "id": 5,
     "text": "To retrieve all the fields of a table during a SELECT query, it is preferable to list all the fields.",
-    "proposals": ["true", "false"],
+    "proposals": ["True", "False"],
     "answer": 0,
     "explanation": "The database server resolves the fields based on the table schema. Passing these fields to him makes his work easier.",
     "tips": "Replace <strong>SELECT * FROM ...</strong> by <strong>SELECT field1, field2, ..., fieldn FROM ...</strong>"

@@ -1,6 +1,8 @@
 <template>
   <header>
-    <router-link v-bind:to="{ name: 'HomePage' }">HomePage</router-link>
+    <router-link v-bind:to="{ name: 'HomePage' }">
+      Eco-Web-Quiz
+    </router-link>
   </header>
 </template>
 

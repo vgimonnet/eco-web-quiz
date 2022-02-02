@@ -1,17 +1,23 @@
 <template>
   <div v-if="question.id == activeQuestion">
-    <h2>{{ question.text }}</h2>
+    <p>{{ question.text }}</p>
     <div v-if="isAnswered">
-      <p>{{ question.explanation }}</p>
-      <button @click="$emit('changeQuestion')">Suivant</button>
+      <p v-html="question.explanation"></p>
+      <div v-if="question.tips">
+        <strong>What can I do ?</strong>
+        <p v-html="question.tips"></p>
+      </div>
+      <div class="flex">
+        <button @click="$emit('changeQuestion')" class="next">Suivant</button>
+      </div>
     </div>
-    <div v-else>
+    <div v-else class="proposals">
       <button 
         v-for="(proposal, index) in question.proposals" 
         :key="index" 
-        @click="answerQuestion(index)" 
+        @click="answerQuestion(index)"
+        v-html="proposal"
       >
-        {{ proposal }}
       </button>
     </div>
   </div>
@@ -28,11 +34,12 @@
     },
     methods: {
       answerQuestion(proposal) {
-        this.isAnswered = true
+        this.isAnswered = true;
+        console.log(this.question.customAnswer)
         if (proposal == this.question.answer) {
-          window.alert('Gaddam you did it !')
+          window.alert('Good answer !');
         } else {
-          window.alert(`You suck ! Good answer was ${ this.question.answer }`)
+          window.alert(`Wrong answer ! The correct answer was "${ this.question.customAnswer ?? this.question.proposals[this.question.answer] }"`);
         }
       }
     }

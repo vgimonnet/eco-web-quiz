@@ -18,15 +18,15 @@
   {
     "id": 3,
     "text": "You can customize the printing of a web page.",
-    "proposals": ["true", "false"],
+    "proposals": ["True", "False"],
     "answer": 0,
-    "explanation": "You can (must) create a specific style sheet for page printing. Add the attribute <span class=\"code\"><span class=\"property\">media</span><span class=\"equal\">=</span><span class=\"value\">\"print\"</span> in the call to your stylesheet.",
+    "explanation": "You can (must) create a specific style sheet for page printing. Add the attribute <span class=\"code\"><span class=\"property\">media</span><span class=\"equal\">=</span><span class=\"value\">\"print\"</span></span> in the call to your stylesheet.",
     "tips": "Hide the header, footer, nav, ... everything that is useless for printing."
   },
   {
     "id": 4,
     "text": "If I use the same DOM element twice, I have to cache it.",
-    "proposals": ["true", "false"],
+    "proposals": ["True", "False"],
     "answer": 0,
     "explanation": "DOM manipulation is RAM and CPU intensive. We must try to reduce the calls as much as possible and therefore cache the DOM elements that we use several times.",
     "tips": "Store DOM elements in a const or let variable."

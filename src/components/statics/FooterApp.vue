@@ -1,7 +1,7 @@
 <template>
   <footer>
     <p>
-      Valentin Gimonnet - {{ new Date().getFullYear() }}
+      <a href="https://www.linkedin.com/in/valentin-gimonnet-73133b182/" aria-label="Liens vers Linkedin" title="Lien vers Linkedin">Valentin Gimonnet</a> - {{ new Date().getFullYear() }}
     </p>
   </footer>
 </template>

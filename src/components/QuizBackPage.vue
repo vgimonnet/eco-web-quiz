@@ -1,6 +1,6 @@
 <template>
   <main>
-    <h1>Quiz - Eco web development</h1>
+    <h1>Quiz - Eco back-end development</h1>
     <question-card 
       v-for="question in questions"
       :key="question.id" 
@@ -8,31 +8,32 @@
       :activeQuestion="activeQuestion"
       @changeQuestion="changeQuestion()"
     />
-    <p v-if="isEnded">
-      Quiz is over ! Thanks for your participation !
-    </p>
+    <end-quiz :isEnded="isEnded" :activeQuiz="activeQuiz" />
   </main>  
 </template>
 
 <script>
-  import questions from '../datas/quiz-back.json'
-  import QuestionCard from './quiz/QuestionCard.vue'
+  import questions from '../datas/quiz-back.json';
+  import QuestionCard from './quiz/QuestionCard.vue';
+  import EndQuiz from './quiz/EndQuiz.vue';
 
   export default {
     name: "QuizBackPage",
     components: {
-      'question-card': QuestionCard
+      'question-card': QuestionCard,
+      'end-quiz': EndQuiz
     },
     data() {
       return {
         questions: questions,
         activeQuestion: 1,
-        isEnded: false
+        isEnded: false,
+        activeQuiz: 'QuizBack'
       }
     },
     methods: {
       changeQuestion() {
-        if (this.activeQuestion == 2) {
+        if (this.activeQuestion == 5) {
           this.isEnded = true;
         }
         this.activeQuestion++;        
