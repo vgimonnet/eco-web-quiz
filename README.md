@@ -1,7 +1,13 @@
-# Vue 3 + Vite
+# Eco-Web-Quiz
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## Why this project ?
+Digital culture project for M2 Web development at [ECV Digital](https://www.ecv.fr/en/) school.
+Several quizzes dealing with the environmental impact of __digital technology__ and __web eco-design__.
 
-## Recommended IDE Setup
+## How to install ?
 
-- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+### Dev
+> pnpm dev
+
+### Prod
+> pnpm build
