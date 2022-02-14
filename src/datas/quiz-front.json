@@ -5,7 +5,8 @@
     "proposals": ["With CSS", "With height and with html tag attributes", "Upstream manually"],
     "answer": 2,
     "explanation": "It is preferable to modify the size of an image beforehand if necessary. Resizing from CSS or attributes will download the image in its entirety or in its maximum weight and therefore use more bandwidth.",
-    "tips": "Resize the image using software to the desired size. If possible, use CSS instead of an image."
+    "tips": "Resize the image using software to the desired size. If possible, use CSS instead of an image.",
+    "refs": "Christiaan Maats, Frédéric Bordage"
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "proposals": ["Style tags", "Style attributes", "CSS style sheet"],
     "answer": 2,
     "explanation": "It is preferable to externalize its style sheets and separate the content if necessary to load only what is necessary.",
-    "tips": "Outsource and separate its CSS, do the same for JS."
+    "tips": "Outsource and separate its CSS, do the same for JS.",
+    "refs": "GreenIt"
   },
   {
     "id": 3,
@@ -21,7 +23,8 @@
     "proposals": ["True", "False"],
     "answer": 0,
     "explanation": "You can (must) create a specific style sheet for page printing. Add the attribute <span class=\"code\"><span class=\"property\">media</span><span class=\"equal\">=</span><span class=\"value\">\"print\"</span></span> in the call to your stylesheet.",
-    "tips": "Hide the header, footer, nav, ... everything that is useless for printing."
+    "tips": "Hide the header, footer, nav, ... everything that is useless for printing.",
+    "refs": "W3Schools, The green web foundation, GreenIt"
   },
   {
     "id": 4,
@@ -29,7 +32,8 @@
     "proposals": ["True", "False"],
     "answer": 0,
     "explanation": "DOM manipulation is RAM and CPU intensive. We must try to reduce the calls as much as possible and therefore cache the DOM elements that we use several times.",
-    "tips": "Store DOM elements in a const or let variable."
+    "tips": "Store DOM elements in a const or let variable.",
+    "refs": "GreenIt, The green web foundation"
   },
   {
     "id": 5,
@@ -37,6 +41,7 @@
     "proposals": ["Directly update", "Hide / Update / Show", "Remove / Recreate"],
     "answer": 1,
     "explanation": "The element must be masked before modification to reduce the number of repaints / reflows in the DOM which are costly in terms of CPU resources.",
-    "tips": "Put the element in display none before modification."
+    "tips": "Put the element in display none before modification.",
+    "refs": "Dev.to, GreenIt"
   }
 ]

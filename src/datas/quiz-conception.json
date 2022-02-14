@@ -5,7 +5,8 @@
     "proposals": ["Conception", "Development", "Deployment", "End of life"],
     "answer": 0,
     "explanation": "Even if all the steps are important in eco-design, it is the design that has a major place. It is at this stage that we will think about all the rest of the life cycle, think about the functionalities, technologies, ...",
-    "tips": "Take the time to design your project upstream."
+    "tips": "Take the time to design your project upstream.",
+    "refs": "Christiaan Maats, Frédéric Bordage"
   },
   {
     "id": 2,
@@ -29,7 +30,8 @@
     "proposals": ["CMS", "Framework", "HTML/CSS/JS"],
     "answer": 2,
     "explanation": "For a static showcase site, web standards are more than enough. It is useless to use a framework or a CMS which will be gas factories, generate/use useless functionalities, ...",
-    "tips": "Analyze which technology is most suitable."
+    "tips": "Analyze which technology is most suitable.",
+    "refs": "GreenIt, The green web foundation"
   },
   {
     "id": 5,
@@ -37,6 +39,7 @@
     "proposals": ["True", "False"],
     "answer": 1,
     "explanation": "The main drawback is going to be the impact on the UI design. We will prefer a sober design rather than a design developed with animations or resource-intensive content.",
-    "tips": "Use a sober design, without (too many) images, videos, 3D, ..."
+    "tips": "Use a sober design, without (too many) images, videos, 3D, ...",
+    "refs": "Christiaan Maats"
   }
 ]

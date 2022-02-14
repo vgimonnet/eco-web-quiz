@@ -1,11 +1,15 @@
 <template>
   <div v-if="question.id == activeQuestion">
-    <p>{{ question.text }}</p>
+    <p v-html="question.text"></p>
     <div v-if="isAnswered">
       <p v-html="question.explanation"></p>
       <div v-if="question.tips">
         <strong>What can I do ?</strong>
         <p v-html="question.tips"></p>
+      </div>
+      <div v-if="question.refs">
+        <strong>Refs</strong>
+        <p v-html="question.refs"></p>
       </div>
       <div class="flex">
         <button @click="$emit('changeQuestion')" class="next">Suivant</button>

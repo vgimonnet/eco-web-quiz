@@ -48,6 +48,21 @@
     <div id="round1"></div>
     <div id="square2"></div>
     <div id="round2"></div> -->
+    <h2>
+      <span>
+        Sources
+      </span>
+    </h2>
+    <ul>
+      <li><a href="https://www.insee.fr/fr/statistiques/4238589?sommaire=4238635">INSEE - Statistics</a></li>
+      <li><a href="https://www.youtube.com/watch?v=ZqeA_psKn2E&ab_channel=TEDxTalks">Tedx - Chrisitaan Maats</a></li>
+      <li><a href="https://ecoresponsable.numerique.gouv.fr/publications/impact-bonnes-pratiques/">French government - Best practices</a></li>
+      <li><a href="https://www.greenit.fr/2020/06/23/quels-sont-les-impacts-environnementaux-du-numerique-en-france/">GreenIt - Environmental impact</a></li>
+      <li><a href="http://www.libella.fr/data/extrait/9782283032152.pdf">Frédéric Bordage / Isabelle Autissier - Digital sobriety (Book)</a></li>
+      <li><a href="https://lebondigital.com/avantages-eco-conception-web/">Alizée Colin for LeBonDigital - Web ecodesign</a></li>
+      <li>Frédéric Bordage - Web ecodesign 115 best practices (Book)</li>
+      <li><a href="https://www.totalenergies.fr/particuliers/parlons-energie/dossiers-energie/comprendre-le-marche-de-l-energie/la-consommation-energetique-de-l-internet-mondial">Adeline M. for Total Energies - Electricity consumption</a></li>
+    </ul>
   </main>
 </template>
 

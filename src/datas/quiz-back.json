@@ -5,20 +5,22 @@
     "proposals": [
       "<span class=\"code-php\"><span class=\"var\">$str</span> = <span class=\"str\">\"string\"</span>;",
       "<span class=\"code-php\"><span class=\"var\">$str</span> = <span class=\"str\">'string'</span>;",
-      "<span class=\"code-php\"><span class=\"var\">$str</span> = <span class=\"str\"><<<</span><span class=\"equal\">END</span><br/></span><span class=\"string tab\"string</span><span class=\"equal\">END</span>;"
+      "<span class=\"code-php\"><span class=\"var\">$str</span> = <span class=\"str\"><<<</span><span class=\"equal\">END</span><br/><span class=\"string\">string</span><br/><span class=\"equal\">END</span>;</span>"
     ],
     "answer": 1,
     "customAnswer": "$str = 'string';",
     "explanation": "It is best to use single quotes '. The other two declarations will be analyzed by PHP to see if it finds any variables to interpret.",
-    "tips": "Always use single quotes with a string. If you need to use variables inside, use concatenation."
+    "tips": "Always use single quotes with a string. If you need to use variables inside, use concatenation.",
+    "refs": "GreenIt, Frédéric Bordage"
   },
   {
     "id": 2,
-    "text": "Is this for loop statement eco-conceptual?",
+    "text": "Is this for loop statement eco-conceptual ? <br/> <span class=\"code-php\">for ($i = 0; $i < count($array); $i ++)</span>",
     "proposals": ["True", "False"],
     "answer": 1,
     "explanation": "Avoid using functions in a loop declaration. They will be called at each iteration and consume more resources.",
-    "tips": "Store the result in a variable before the loop declaration and use it inside."
+    "tips": "Store the result in a variable before the loop declaration and use it inside.",
+    "refs": "PHP"
   },
   {
     "id": 3,
@@ -26,7 +28,8 @@
     "proposals": ["True", "False"],
     "answer": 0,
     "explanation": "Remember to remove variables that are no longer used to save RAM resources. In particular tables and collections which can take up a lot of space.",
-    "tips": "Use the PHP function <span class=\"code-php\"><span class=\"function\">unset</span>(<span class=\"var\">$var</span>);</span> to remove the variable and free up memory space."
+    "tips": "Use the PHP function <span class=\"code-php\"><span class=\"function\">unset</span>(<span class=\"var\">$var</span>);</span> to remove the variable and free up memory space.",
+    "refs": "GreenIt, The green web foundation, PHP"
   },
   {
     "id": 4,
@@ -39,7 +42,8 @@
     ],
     "answer": 3,
     "explanation": "Limiting the number of results saves bandwidth, because less data to transfer, and saves CPU and RAM resources. The number of requests and the storage are not impacted.",
-    "tips": "Use <strong>LIMIT</strong> statement in database request."
+    "tips": "Use <strong>LIMIT</strong> statement in database request.",
+    "refs": "French Government, Frédéric Bordage"
   },
   {
     "id": 5,
@@ -47,6 +51,7 @@
     "proposals": ["True", "False"],
     "answer": 0,
     "explanation": "The database server resolves the fields based on the table schema. Passing these fields to him makes his work easier.",
-    "tips": "Replace <strong>SELECT * FROM ...</strong> by <strong>SELECT field1, field2, ..., fieldn FROM ...</strong>"
+    "tips": "Replace <strong>SELECT * FROM ...</strong> by <strong>SELECT field1, field2, ..., fieldn FROM ...</strong>",
+    "refs": "French Government, Frédéric Bordage"
   }
 ]
