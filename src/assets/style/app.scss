@@ -1,7 +1,7 @@
 $green: rgb(46, 168, 97);
-$light-green: rgb(100, 216, 148);
-$dark:  #29323b;
-$background:  #29323be1;
+$light-green: #98D5A2;
+$dark:  #000000;
+$background: #000000;
 $white: #FFF;
 $segoe: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 $trebuchet: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -93,10 +93,13 @@ header {
     font-size: 2.4rem;
     font-weight: 500;
     font-family: $segoe;
+    margin-left: 2rem;
   }
+  justify-content: flex-start;
 }
 footer {
   border-top: .2rem solid $white;
+  justify-content: center;
 }
 
 header, footer {
@@ -104,7 +107,6 @@ header, footer {
   height: 5rem;
   color: $white;
   display: flex;
-  justify-content: center;
   align-items: center;
   a, a:focus, a:visited {
     color: $white;
